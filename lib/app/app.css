@@ -1,0 +1,14 @@
+/* 项目公共样式 */
+/* 如果比较多可以考虑抽离成单个单个的组件 */
+.bar-tab-brand {
+    background-color: #262c3b;
+}
+.bar-tab-brand .tab-item.active,
+.bar-tab-brand .tab-item:active {
+    color: #67c048;
+}
+
+.buttons-tab-brand .button.active {
+    color: #67c048;
+    border-color: #67c048;
+}

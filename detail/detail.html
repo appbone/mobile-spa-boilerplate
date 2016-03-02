@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web App - by SUI Mobile</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <link rel="stylesheet" href="/lib/app/main.css">
+</head>
+<body>
+    <div class="page-group page-group-detail">
+        <style>
+        .card-case {
+            margin: 0;
+            margin-bottom: .5rem;
+        }
+        </style>
+        <div class="page" id="page-detail" data-page-title="Detail - by SUI Mobile">
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left back" href="/profile/profile.html">
+                    <span class="icon icon-left"></span> 返回
+                </a>
+            </header>
+            <div class="content">
+                <div class="content-padded">
+                    <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+                    <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+                    <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+                    <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+                    <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+                </div>
+            </div>
+        </div>
+        <script src="http://g.alicdn.com/sj/lib/zepto/zepto.min.js"></script>
+        <script src="http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js"></script>
+        <script src="/lib/app/app.js"></script>
+        <script>
+        (function($) {
+            // XXX 如果直接打开 /detail/detail.html 后马上回退无法回退到上一页
+            // 因此采用判断浏览器历史记录数的方法来主动加载上一页
+            // 参考: https://github.com/sdc-alibaba/SUI-Mobile/issues/176
+            if (window.history.length <= 1) {
+                $('.page-group-detail .bar-nav .back').removeClass('back');
+            }
+        })(Zepto);
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web App - by SUI Mobile</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 项目的第三方样式库 -->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <!-- 项目的公共样式 -->
+    <link rel="stylesheet" href="/lib/app/main.css">
+</head>
+<body>
+    <div class="page-group page-group-index">
+        <style>
+        /* 针对单页的样式内嵌到 page-group 中 */
+        /* 要注意样式冲突(可以追加 page-group-index 这样的作用域来限制所有样式) */
+        /* 对于公共样式尽量提升到全局样式或者作为公共组件样式(app.css) */
+        /* 如果你觉得麻烦, 也可以将所有样式都合并到一个 css */
+        /* 或者单独做一个模块的 css 文件, 请参考 customize 模块 */
+        .bar-nav .text-hello {
+            color: #333;
+        }
+        .bar-nav .text-logout {
+            color: #999;
+        }
+
+        .spread-bar {
+            border-bottom: 1px solid #ddd;
+        }
+        .spread-bar img {
+            vertical-align: middle;
+        }
+        .spread-bar .col-50:first-child {
+            border-right: 1px solid #ddd;
+        }
+
+        .case-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .case-list h2 {
+            font-size: 0.546875rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #666;
+        }
+        </style>
+        <!-- 注意一般都需要设置id -->
+        <!-- 如果需要确保页面 title 是正确的, 必须设置 data-page-title -->
+        <div class="page" id="page-index" data-page-title="Index - by SUI Mobile">
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left text-hello">你好, xxxx</a>
+                <a class="button button-link button-nav pull-right text-logout">注销</a>
+            </header>
+            <nav class="bar bar-tab bar-tab-brand">
+                <a class="tab-item active" href="/index.html">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item" href="customize/customize.html">
+                    <span class="icon icon-edit"></span>
+                    <span class="tab-label">编辑</span>
+                </a>
+                <a class="tab-item" href="profile/profile.html">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label">我</span>
+                    <span class="badge">2</span>
+                </a>
+            </nav>
+            <div class="content">
+                <div class="swiper-container" data-space-between="10" data-loop="true">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="img-responsive" src="http://temp.im/640x250/34AADC/fff" alt=""></div>
+                        <div class="swiper-slide"><img class="img-responsive" src="http://temp.im/640x250/4CD964/fff" alt=""></div>
+                        <div class="swiper-slide"><img class="img-responsive" src="http://temp.im/640x250/FF2D55/fff" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="row no-gutter spread-bar">
+                    <div class="col-50">
+                        <img class="img-responsive" src="http://temp.im/320x158/3C3C3C/fff">
+                    </div>
+                    <div class="col-50">
+                        <img class="img-responsive" src="http://temp.im/320x158/3C3C3C/fff">
+                    </div>
+                </div>
+                <div class="buttons-tab buttons-tab-brand">
+                    <a href="#tab1" class="tab-link active button">案例1</a>
+                    <a href="#tab2" class="tab-link button">案例2</a>
+                </div>
+                <div class="content-block">
+                  <div class="tabs">
+                    <div id="tab1" class="tab active">
+                        <ul class="row case-list">
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                            <li class="col-33">
+                                <a href="http://bing.com" target="_blank" class="external">
+                                    <img class="img-responsive" src="http://temp.im/220x226">
+                                </a>
+                                <h2 title="这里放一个名字可好可好可好啊?">这里放一个名字可好可好可好啊?</h2>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <div class="content-block">
+                            <p>基于 <a href="http://m.sui.taobao.org/" target="_blank" class="external">SUI Mobile</a> 来实现 Web App</p>
+                            <p><a href="#" class="open-popup">关于 SUI Mobile</a></p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- XXX 这里没有按照官网文档将 popup 与 page-group 平行放置而是包含在其里面 -->
+        <div class="popup">
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-right close-popup">关闭</a>
+                <h1 class="title">关于 SUI Mobile</h1>
+            </header>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="content-block">
+                        <p>SUI Mobile 是阿里巴巴国际UED前端团队出品的移动端 UI库。</p>
+                        <p>主要借鉴 Framework7 的形态并以此为基础，能兼容到 iOS 6.0+ 和 Android 4.0+，非常适合开发跨平台 Web App。</p>
+                        <p>提供的配置和功能较 Framework7 要少一些, 但轻量简单得多。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 注意: 必须将所有脚本都放在 page-group 中, -->
+        <!-- 才能够确保不管是用户主动刷新页面, 还是页面路由, 都会执行 -->
+        <!-- 先放公共模块, 再放页面逻辑 -->
+        <script src="http://g.alicdn.com/sj/lib/zepto/zepto.min.js"></script>
+        <script src="http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js"></script>
+        <!-- 公共模块 -->
+        <script src="/lib/app/app.js"></script>
+        <!-- 页面逻辑 -->
+        <script>
+        (function($) {
+            // 不用担心代码因为反复路由而重复执行,
+            // 因为每次路由都只是拿了页面的 HTML 字符串来渲染, 因此每次都是全新的 DOM 节点
+            // @see https://github.com/sdc-alibaba/SUI-Mobile/blob/dev/js/router.js
+            //      Router.prototype._doSwitchDocument
+            //      $($('<div></div>').append(this.cache[urlObj.base].$content).html());
+            //      
+            // 也可以考虑将 js 全部放置到一个模块的 js 文件中, 请参考 customize 模块
+            // 
+            // 建议所有的 DOM 查找都控制在单页的内容范围内
+            $('.page-group-index').on('click', '.text-logout', function() {
+                $.confirm('确认注销吗?', function() {
+                    $.alert('确定');
+                }, function() {
+                    $.alert('取消');
+                });
+            });
+        })(Zepto);
+        </script>
+    </div>
+</body>
+</html>
