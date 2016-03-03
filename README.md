@@ -17,7 +17,7 @@ Mobile Single Page App(SPA) Boilerplate, the easiest way to build a WebApp havin
 
 **再来说说好处**
 * 提供了一套模仿原生 App 的 UI 组件(感谢 Framework7 框架)
-* 提供了一套网站项目目录结构规范(即项目组织架构), 适用于任何网站, 不限于单页 WebApp
+* 提供了一套网站[项目目录结构规范](https://github.com/appbone/mobile-spa-boilerplate/blob/master/directory.md)(即项目组织架构), 适用于任何网站, 不限于单页 WebApp
 * 提供了一套开发规范(例如公共逻辑放哪里, 单页面逻辑放哪里, 样式放哪里)
 * 解决了一般项目慢慢变大后会遇到的问题(例如按需加载)
 * 解决了一些小坑(例如动态修改页面的 title)
