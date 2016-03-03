@@ -29,10 +29,11 @@ Mobile Single Page App(SPA) Boilerplate, the easiest way to build a WebApp havin
   > 借鉴 Framework7, 基于 Zepto 比 Framework7 更轻量, 对 Android 的兼容性更好
 
 **体验地址**
-![mobile-spa-boilerplate-msui-qrcode](http://imgchr.com/images/mobile-spa-boilerplate-msui-qrcode.png)
+
+[![mobile-spa-boilerplate-msui-qrcode](http://imgchr.com/images/mobile-spa-boilerplate-msui-qrcode.png)](http://appbone.github.io/mobile-spa-boilerplate/index.html)
 
 
-另外基于[Framework7](https://github.com/appbone/mobile-spa-boilerplate/tree/gh-pages)实现的版本
+另外还有基于 [Framework7](https://github.com/appbone/mobile-spa-boilerplate/tree/gh-pages) 实现的版本
 
 ## 适用范围
 * Hybrid app
