@@ -29,10 +29,10 @@ Mobile Single Page App(SPA) Boilerplate, the easiest way to build a WebApp havin
   > 功能和动画都非常强大, 但对于 Android 的兼容性稍差, 特别是一些[组件的兼容性](https://github.com/sdc-fe/Framework7-Plus#compitable "Framework7 在安卓上的主要兼容性问题")
 
 **体验地址**
-![mobile-spa-boilerplate-framework7-qrcode](http://imgchr.com/images/mobile-spa-boilerplate-framework7-qrcode.png)
 
+[![mobile-spa-boilerplate-framework7-qrcode](http://imgchr.com/images/mobile-spa-boilerplate-framework7-qrcode.png)](http://mobile-spa-boilerplate.surge.sh/index.html)
 
-另外基于[SUI Mobile](https://github.com/appbone/mobile-spa-boilerplate)实现的版本
+另外还有基于 [SUI Mobile](https://github.com/appbone/mobile-spa-boilerplate) 实现的版本
 
 ## 适用范围
 * Hybrid app
