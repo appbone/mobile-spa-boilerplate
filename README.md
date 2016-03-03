@@ -16,7 +16,7 @@ Mobile Single Page App(SPA) Boilerplate, the easiest way to build a WebApp havin
     - 页面上的链接自动做页面切换效果
 
 **再来说说好处**
-* 提供了一套模仿原生 App 的 UI 组件(感谢 Framework7 框架)
+* 提供了一套模仿原生 App 的 UI 组件(感谢 SUI Mobile 框架)
 * 提供了一套网站[项目目录结构规范](https://github.com/appbone/mobile-spa-boilerplate/blob/master/directory.md)(即项目组织架构), 适用于任何网站, 不限于单页 WebApp
 * 提供了一套开发规范(例如公共逻辑放哪里, 单页面逻辑放哪里, 样式放哪里)
 * 解决了一般项目慢慢变大后会遇到的问题(例如按需加载)
@@ -24,12 +24,15 @@ Mobile Single Page App(SPA) Boilerplate, the easiest way to build a WebApp havin
 
 ## 架构的组成
 **技术栈**
-* [Framework7](http://framework7.io/)
-
-  > 功能和动画都非常强大, 但对于 Android 的兼容性稍差, 特别是一些[组件的兼容性](https://github.com/sdc-fe/Framework7-Plus#compitable "Framework7 在安卓上的主要兼容性问题")
 * [SUI Mobile](http://m.sui.taobao.org/ "出自阿里巴巴共享业务事业部UED团队")
 
   > 借鉴 Framework7, 基于 Zepto 比 Framework7 更轻量, 对 Android 的兼容性更好
+
+**体验地址**
+![mobile-spa-boilerplate-msui-qrcode](http://imgchr.com/images/mobile-spa-boilerplate-msui-qrcode.png)
+
+
+另外基于[Framework7](https://github.com/appbone/mobile-spa-boilerplate/tree/gh-pages)实现的版本
 
 ## 适用范围
 * Hybrid app
