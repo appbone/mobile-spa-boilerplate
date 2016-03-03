@@ -1,0 +1,55 @@
+/* 项目公共样式 */
+/* 如果比较多可以考虑抽离成单个单个的组件 */
+
+/* 避免幻灯片中的图片造成底部预留出多余的空白空间 */
+.swiper-slide img {
+    display: block;
+    /*vertical-align: middle;*/
+    /*vertical-align: sub;*/
+}
+
+/* 顶部工具栏图标 */
+.toolbar-brand .fa {
+    font-size: 30px;
+}
+
+/* 页面中的 tab 组件 */
+.buttons-tab-brand {
+    background-color: #fff;
+    position: relative;
+}
+.buttons-tab-brand:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #d0d0d0;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+}
+.buttons-tab-brand .button {
+    height: 44px;
+    line-height: 44px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: #5f646e;
+    background: none;
+}
+.buttons-tab-brand .button:first-child {
+    border-radius: 0;
+    border-left-width: 0;
+}
+.buttons-tab-brand .button:last-child {
+    border-radius: 0;
+}
+.buttons-tab-brand .button.active {
+    color: #007aff;
+    border-color: #007aff;
+    z-index: 100;
+}

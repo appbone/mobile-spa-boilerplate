@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web App - by Framework7</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/framework7/1.4.0/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/framework7/1.4.0/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/app/main.css">
+</head>
+<body>
+    <div class="statusbar-overlay"></div>
+    <div class="views">
+        <div class="view view-main">
+            <div class="navbar">
+                <div class="navbar-inner"></div>
+            </div>
+            <!-- 如果需要各个页面都有不同的 navbar 和 toolbar(tabbar) -->
+            <!-- 请参考: http://www.idangero.us/framework7/docs/navbar-toolbar-layouts.html#mixed-layouts -->
+            <!-- 将 toolbar 放置在 page 里面 -->
+            <div class="pages navbar-through tabbar-labels-through">
+                <!-- 如果不想在初始化加载时设置 pushState: false -->
+                <!-- 可以去掉初始的 page, 就没有初始页面回退的问题了, -->
+                <!-- 但会影响到 pageInit 事件监听, 回退时没有触发这个事件了 -->
+                <div class="page" data-page="index"></div>
+            </div>
+            <div class="toolbar tabbar tabbar-labels toolbar-brand">
+                <div class="toolbar-inner">
+                    <a href="home/home.html" class="link active no-animation toolbarlink-home">
+                        <i class="icon fa fa-home"></i>
+                        <span class="tabbar-label">首页</span>
+                    </a>
+                    <a href="customize/customize.html" class="link no-animation toolbarlink-customize">
+                        <i class="icon fa fa-edit"></i>
+                        <span class="tabbar-label">编辑</span>
+                    </a>
+                    <a href="profile/profile.html" class="link no-animation toolbarlink-profile">
+                        <i class="icon fa fa-user"><span class="badge bg-red">3</span></i> 
+                        <span class="tabbar-label">我</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/framework7/1.4.0/js/framework7.js"></script>
+    <script src="lib/app/app.js"></script>
+    <!-- 由于通过 router ajax 加载的 page 无法执行 <script> 标签(因为是通过 innerHTML 解析的 DOM) -->
+    <!-- 因此将所有页面模块逻辑全部在 index.html 中加载 -->
+    <!-- 如果要考虑更复杂的按需加载逻辑, 请参考 preprocess -->
+    <!-- http://www.idangero.us/framework7/docs/init-app.html#example-with-preprocess-content -->
+    <script src="home/home.js"></script>
+    <script src="customize/customize.js"></script>
+    <script src="profile/profile.js"></script>
+</body>
+</html>
