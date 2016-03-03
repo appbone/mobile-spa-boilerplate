@@ -30,7 +30,7 @@ Mobile Single Page App(SPA) Boilerplate, the easiest way to build a WebApp havin
 
 **体验地址**
 
-[![mobile-spa-boilerplate-framework7-qrcode](http://imgchr.com/images/mobile-spa-boilerplate-framework7-qrcode.png)](http://mobile-spa-boilerplate.surge.sh/index.html)
+[![mobile-spa-boilerplate-framework7-qrcode](http://imgchr.com/images/mobile-spa-boilerplate-framework7-qrcode.png)](http://appbone.github.io/mobile-spa-boilerplate/index.html)
 
 另外还有基于 [SUI Mobile](https://github.com/appbone/mobile-spa-boilerplate) 实现的版本
 
