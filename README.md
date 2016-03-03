@@ -27,9 +27,12 @@ Mobile Single Page App(SPA) Boilerplate, the easiest way to build a WebApp havin
 * [Framework7](http://framework7.io/)
 
   > 功能和动画都非常强大, 但对于 Android 的兼容性稍差, 特别是一些[组件的兼容性](https://github.com/sdc-fe/Framework7-Plus#compitable "Framework7 在安卓上的主要兼容性问题")
-* [SUI Mobile](http://m.sui.taobao.org/ "出自阿里巴巴共享业务事业部UED团队")
 
-  > 借鉴 Framework7, 基于 Zepto 比 Framework7 更轻量, 对 Android 的兼容性更好
+**体验地址**
+![mobile-spa-boilerplate-framework7-qrcode](http://imgchr.com/images/mobile-spa-boilerplate-framework7-qrcode.png)
+
+
+另外基于[SUI Mobile](https://github.com/appbone/mobile-spa-boilerplate)实现的版本
 
 ## 适用范围
 * Hybrid app
