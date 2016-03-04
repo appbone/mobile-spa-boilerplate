@@ -72,3 +72,4 @@ user/
 
 ## 参考
 * [Baidu EFE team 项目目录结构规范](https://github.com/ecomfe/spec/blob/master/directory.md)
+* [JavaScript File & Folder Structures: Just Pick One](http://lostechies.com/derickbailey/2012/02/02/javascript-file-folder-structures-just-pick-one/)
