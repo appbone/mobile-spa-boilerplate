@@ -57,16 +57,31 @@
                 <a class="button button-link button-nav pull-left text-hello">你好, xxxx</a>
                 <a class="button button-link button-nav pull-right text-logout">注销</a>
             </header>
+            <!--
+            "跳转"页面的时候, 底部工具栏也伴随着有页面切换动画,
+            因为此时他是作为 page-group 的节点, 会被当成是页面的展示内容.
+            折中的解决办法是:
+            1. 将 nav 放到 page-group 外面(即与 page-group 平级)
+            2. 修改 page-group 的样式(默认样式是占满整屏的), 预留出 nav 的高度
+            3. 注意内嵌在 page-group 中的 popup, 打开时并没有处于全屏状态
+                因为此时 page-group 预留出了 nav 的高度, 并非全屏,
+                因此相应的内嵌 popup 也没有全屏了.
+                要解决这个问题, 可以采用动态创建 popup 的方式来避免($.popup)
+
+            或者尝试下
+            https://github.com/sdc-alibaba/SUI-Mobile/issues/311
+            参考代码 app.css 强制让某些页是0时长动画
+            -->
             <nav class="bar bar-tab bar-tab-brand">
                 <a class="tab-item active" href="/index.html">
                     <span class="icon icon-home"></span>
                     <span class="tab-label">首页</span>
                 </a>
-                <a class="tab-item" href="customize/customize.html">
+                <a class="tab-item" href="/customize/customize.html">
                     <span class="icon icon-edit"></span>
                     <span class="tab-label">编辑</span>
                 </a>
-                <a class="tab-item" href="profile/profile.html">
+                <a class="tab-item" href="/profile/profile.html">
                     <span class="icon icon-me"></span>
                     <span class="tab-label">我</span>
                     <span class="badge">2</span>
@@ -200,6 +215,11 @@
             </div>
         </div>
         <!-- XXX 这里没有按照官网文档将 popup 与 page-group 平行放置而是包含在其里面 -->
+        <!--
+        如果与 page-group 平行放置, 那么当首页不是 index.html 时,
+        跳转到 index.html, 会造成 popup 节点丢失,
+        因为路由只会将 index.html 中 page-group 的内容抽取出来替换到页面中
+        -->
         <div class="popup">
             <header class="bar bar-nav">
                 <a class="button button-link button-nav pull-right close-popup">关闭</a>
