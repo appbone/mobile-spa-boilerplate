@@ -1,10 +1,10 @@
-(function($$, myApp) {
+(function($$, global) {
     function init(page) {
         var $page = $$(page.container);
-        myApp.swiper($page.find('.swiper-container'), {
+        global.myapp.myApp.swiper($page.find('.swiper-container'), {
             pagination: $page.find('.swiper-pagination')
         });
     }
 
-    myApp.onPageInit('customize', init);
-})(Dom7, myApp);
+    global.myapp.myApp.onPageInit('customize', init);
+})(Dom7, window);
