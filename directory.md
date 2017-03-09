@@ -126,3 +126,4 @@ user/
 * [Baidu EFE team 项目目录结构规范](https://github.com/ecomfe/spec/blob/master/directory.md)
 * [JavaScript File & Folder Structures: Just Pick One](http://lostechies.com/derickbailey/2012/02/02/javascript-file-folder-structures-just-pick-one/)
 * [运营活动规范](https://github.com/o2team/wxsq-event-guide)
+* [OpenDoc - 项目代码整理指南 | 美团点评技术团队](https://juejin.im/post/58b526cd2f301e00576f8bab)
